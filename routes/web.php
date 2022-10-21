@@ -24,3 +24,4 @@ Route::post('/participant/store', [ParticipantController::class, 'store'])->name
 Route::get('/absent/{number}', [AbsentController::class, 'store'])->name('absent_store');
 Route::get('/shuffle', [ShuffleController::class, 'index'])->name('shuffle_index');
 Route::post('/getabsent', [AbsentController::class, 'getabsent'])->name('getabsent');
+Route::post('/doorprize', [ShuffleController::class, 'store'])->name('doorprize.store');

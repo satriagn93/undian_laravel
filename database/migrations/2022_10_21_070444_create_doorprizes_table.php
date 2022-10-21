@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateParticipantsTable extends Migration
+class CreateDoorprizesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateParticipantsTable extends Migration
      */
     public function up()
     {
-        Schema::create('participants', function (Blueprint $table) {
+        Schema::create('doorprizes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('number')->nullable();
             $table->string('name')->nullable();
             $table->string('doorprize')->nullable();
-            $table->string('email')->nullable();
-            $table->string('url')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateParticipantsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('participants');
+        Schema::dropIfExists('doorprizes');
     }
 }
