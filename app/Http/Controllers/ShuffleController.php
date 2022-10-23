@@ -52,8 +52,36 @@ class ShuffleController extends Controller
         $doorprize = new Doorprize;
         $doorprize->number          = $request->number_model;
         $doorprize->name           = $request->name_model;
-        $doorprize->doorprize        = '1';
+        $doorprize->doorprize        = $request->doorprize_model;
         $doorprize->save();
         return redirect('/shuffle')->with('message', 'Departments updated.');
     }
+
+    public function participantbyid($id)
+    {
+
+        if ($id == 1) {
+            $participant = Participant::where('doorprize', '1')->first();
+        } elseif ($id == 2){
+            $participant = Participant::where('doorprize', '2')->first();
+        } elseif ($id == 3){
+            $participant = Participant::where('doorprize', '3')->first();
+        } elseif ($id == 4){
+            $participant = Participant::where('doorprize', '4')->first();
+        } elseif ($id == 5){
+            $participant = Participant::where('doorprize', '5')->first();
+        } elseif ($id == 6){
+            $participant = Participant::where('doorprize', '6')->first();
+        } else{
+            $participant = Participant::where('doorprize', null)
+            ->inRandomOrder()
+            ->limit(1)
+            ->first();
+        }
+        return response()->json([
+            'error' => false,
+            'detail'=> $participant
+        ], 200);
+    }
+
 }

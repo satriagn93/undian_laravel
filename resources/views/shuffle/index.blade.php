@@ -78,7 +78,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 2</a>
+                                                <a href="#" onclick="dp2()"> Win doorprize 2</a>
                                             </span>
                                         </div>
                                     </div>
@@ -100,7 +100,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 3</a>
+                                                <a href="#" onclick="dp3()"> Win doorprize 3</a>
                                             </span>
                                         </div>
                                     </div>
@@ -121,7 +121,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 4</a>
+                                                <a href="#" onclick="dp4()"> Win doorprize 4</a>
                                             </span>
                                         </div>
                                     </div>
@@ -142,7 +142,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 5</a>
+                                                <a href="#" onclick="dp5()"> Win doorprize 5</a>
                                             </span>
                                         </div>
                                     </div>
@@ -163,7 +163,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 6</a>
+                                                <a href="#" onclick="dp6()"> Win doorprize 6</a>
                                             </span>
                                         </div>
                                     </div>
@@ -184,7 +184,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 7</a>
+                                                <a href="#" onclick="dp7()"> Win doorprize 7</a>
                                             </span>
                                         </div>
                                     </div>
@@ -205,7 +205,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 8</a>
+                                                <a href="#" onclick="dp8()"> Win doorprize 8</a>
                                             </span>
                                         </div>
                                     </div>
@@ -226,7 +226,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 9</a>
+                                                <a href="#" onclick="dp9()"> Win doorprize 9</a>
                                             </span>
                                         </div>
                                     </div>
@@ -247,7 +247,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 10</a>
+                                                <a href="#" onclick="dp10()"> Win doorprize 10</a>
                                             </span>
                                         </div>
                                     </div>
@@ -268,7 +268,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 11</a>
+                                                <a href="#" onclick="dp11()"> Win doorprize 11</a>
                                             </span>
                                         </div>
                                     </div>
@@ -289,7 +289,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 12</a>
+                                                <a href="#" onclick="dp12()"> Win doorprize 12</a>
                                             </span>
                                         </div>
                                     </div>
@@ -310,7 +310,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 13</a>
+                                                <a href="#" onclick="dp13()"> Win doorprize 13</a>
                                             </span>
                                         </div>
                                     </div>
@@ -331,7 +331,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 14</a>
+                                                <a href="#" onclick="dp14()"> Win doorprize 14</a>
                                             </span>
                                         </div>
                                     </div>
@@ -352,7 +352,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 15</a>
+                                                <a href="#" onclick="dp15()"> Win doorprize 15</a>
                                             </span>
                                         </div>
                                     </div>
@@ -373,7 +373,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a href="#" onclick="dp1()"> Win doorprize 16</a>
+                                                <a href="#" onclick="dp16()"> Win doorprize 16</a>
                                             </span>
                                         </div>
                                     </div>
@@ -392,16 +392,16 @@
                                         <span class="text-gray-400 mt-1 fw-semibold fs-6"> </span>
                                     </h3>
                                 </div>
-                                <input type="text" class="form-control form-control-sm" id="inputan" name="inputan" hidden>
-                                <input type="text" class="form-control form-control-sm ikanbawal" id="ikanbawal" name="ikanbawal">
+                                <input type="text" class="form-control form-control-sm" id="doorprizevalue" name="doorprizevalue" hidden>
                                 <div id="formdiv" style="display: none;" class="card-body pt-0">
-                                    <label for="exampleFormControlInput1" class="required form-label">Nomor Undian</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Nomor Undian</label>
                                     <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="names" id="divname"></div>
+                                    
                                     <br>
                                     <div class="card-toolbar">
                                         <a class="btn btn-sm btn-success roll" id="btn_start">Start</a> &nbsp &nbsp
-                                        <!-- <a class="btn btn-sm btn-success roll" id="referal" onclick="rollClick()">Start</a> &nbsp &nbsp -->
-                                        <a onclick="addshuffle()" class="btn btn-sm btn-primary" id="btn_ok" style="display: none;">OK!</a>
+                                        <a href="{{url('/shuffle')}}" class="btn btn-sm btn-secondary">Reset</a> &nbsp &nbsp 
+                                        <a onclick="addshuffle()" class="btn btn-sm btn-primary" id="btn_ok" style="display: none;">OK !</a>
                                     </div>
                                 </div>
                             </div>
@@ -458,7 +458,7 @@
     }
 
     function trigerabsent() {
-        setDeceleratingTimeout(randomName, 0, 500000);
+        setDeceleratingTimeout(randomName, 0, 5000);
     }
 
     function setDeceleratingTimeout(callback, factor, times) {
@@ -474,17 +474,6 @@
         setTimeout(internalCallback, factor);
     }
 
-    function dp1() {
-        // document.getElementById("ikanbawal").value = "0";
-
-        document.getElementById('ikanbawal').value = "1";
-        $("#formdiv").show('');
-        $('#p1value').html("1");
-        document.getElementById('inputan').value = "1";
-        document.getElementById('name_model').value = "Satria Girinanda";
-        document.getElementById('number_model').value = "469245532658423";
-        document.getElementById('doorprize_model').value = "1";
-    }
 </script>
 @endsection
 @push('js')

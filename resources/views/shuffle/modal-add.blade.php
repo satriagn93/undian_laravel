@@ -57,9 +57,7 @@
                                         <!--begin::Progress-->
                                         <div class="d-flex flex-column mw-200px">
                                             <div class="d-flex align-items-center mb-2">
-                                            </div>
-                                            <div class="progress h-6px w-200px">
-                                                <!-- <div class="progress-bar bg-success" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div> -->
+                                                <a href="{{url('/shuffle')}}" class="btn btn-sm btn-secondary">Cancel</a>
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-sm btn-primary">Continue</button>
