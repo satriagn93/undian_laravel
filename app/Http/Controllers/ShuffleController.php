@@ -75,19 +75,10 @@ class ShuffleController extends Controller
 
     public function participantbyid($id)
     {
+        $checkparticipant = Participant::where('doorprize', $id)->first();
 
-        if ($id == 1) {
-            $participant = Participant::where('doorprize', '1')->first();
-        } elseif ($id == 2) {
-            $participant = Participant::where('doorprize', '2')->first();
-        } elseif ($id == 3) {
-            $participant = Participant::where('doorprize', '3')->first();
-        } elseif ($id == 4) {
-            $participant = Participant::where('doorprize', '4')->first();
-        } elseif ($id == 5) {
-            $participant = Participant::where('doorprize', '5')->first();
-        } elseif ($id == 6) {
-            $participant = Participant::where('doorprize', '6')->first();
+        if ($checkparticipant == !null) {
+            $participant = Participant::where('doorprize', $id)->first();
         } else {
             $participant = Participant::where('doorprize', null)
                 ->inRandomOrder()

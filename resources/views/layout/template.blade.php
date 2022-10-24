@@ -94,8 +94,11 @@ License: For each use you must have a valid license purchased only from above li
                             </div>
                             <!--end::Aside toggle-->
                             <!--begin::Logo-->
-                            <a href="../../demo10/dist/index.html">
-                                <img alt="Logo" src="{{asset('template')}}/media/logos/logo1.png" class="h-25px h-lg-30px d-none d-md-block" />
+                            <a href="{{url('/shuffle')}}">
+                                <img alt="Logo" src="{{asset('template')}}/media/logos/logo1.png" class="h-25px d-none d-md-block" />
+                            </a>
+                            <a>
+                                <img style="width: 400px; height: 200px;" alt="Logo" src="{{asset('template')}}/media/logos/banner.jpg" class="h-25px h-lg-30px d-none d-md-block" />
                             </a>
                             <!--end::Logo-->
                         </div>
