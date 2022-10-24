@@ -18,7 +18,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [Controller::class, 'dashboard'])->name('dashboard');
+Route::get('/ikan', [Controller::class, 'dashboard'])->name('dashboard');
+Route::get('/', [ShuffleController::class, 'index'])->name('shuffle_index');
 Route::get('/participant', [ParticipantController::class, 'index'])->name('participant_index');
 Route::post('/participant/store', [ParticipantController::class, 'store'])->name('participant.store');
 Route::get('/absent/{number}', [AbsentController::class, 'store'])->name('absent_store');
@@ -28,3 +29,4 @@ Route::post('/doorprize', [ShuffleController::class, 'store'])->name('doorprize.
 
 // modal
 Route::get('/participantbyid/{id}', [ShuffleController::class, 'participantbyid'])->name('participantbyid');
+Route::delete('/cancel/{id}', [ShuffleController::class, 'cancel'])->name('cancel');

@@ -27,7 +27,7 @@ License: For each use you must have a valid license purchased only from above li
     {{-- <meta property="og:url" content="https://keenthemes.com/metronic" /> --}}
     <meta property="og:site_name" content="Keenthemes | Metronic" />
     <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-    <link rel="shortcut icon" href="{{asset('template')}}/media/logos/favicon.ico" />
+    <link rel="shortcut icon" href="{{asset('template')}}/media/logos/icomelawai.ico" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -44,6 +44,7 @@ License: For each use you must have a valid license purchased only from above li
 </head>
 <!--end::Head-->
 <!--begin::Body-->
+<!-- @include('sweetalert::alert') -->
 
 <body data-kt-name="metronic" id="kt_body" class="header-tablet-and-mobile-fixed aside-enabled">
     <!--begin::Theme mode setup on page load-->
@@ -104,7 +105,7 @@ License: For each use you must have a valid license purchased only from above li
                             <!--begin::Item-->
                             <div class="d-flex align-items-stretch me-2 me-lg-4">
                                 <!--begin::Search-->
-                                <div id="" class="header-search d-flex align-items-center header-search w-lg-250px" >
+                                <div id="" class="header-search d-flex align-items-center header-search w-lg-250px">
                                     <!--begin::Tablet and mobile search toggle-->
                                     <div data-kt-search-element="toggle" class="d-flex d-lg-none align-items-center">
                                         <div class="btn btn-icon btn-borderless btn-color-white btn-active-primary bg-white bg-opacity-10">
@@ -844,7 +845,7 @@ License: For each use you must have a valid license purchased only from above li
                                 </div>
                                 <!--end::Search-->
                             </div>
-                            
+
                             <div class="d-flex align-items-center me-2 me-lg-4">
                                 <a href="#" class="btn btn-icon btn-borderless btn-color-white btn-active-primary bg-white bg-opacity-10" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
                                     <!--begin::Svg Icon | path: icons/duotune/communication/com013.svg-->
@@ -875,7 +876,7 @@ License: For each use you must have a valid license purchased only from above li
                                             <!--end::Username-->
                                         </div>
                                     </div>
-                                    
+
                                     <!--end::Menu item-->
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-5 my-1">
@@ -5720,7 +5721,9 @@ License: For each use you must have a valid license purchased only from above li
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
     @stack('js')
+
 </body>
+
 <!--end::Body-->
 
 </html>

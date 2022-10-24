@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Participant;
 use App\Models\Doorprize;
 use Illuminate\Support\Facades\DB;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ShuffleController extends Controller
 {
@@ -39,6 +40,7 @@ class ShuffleController extends Controller
             'doorprize8',
             'doorprize9',
             'doorprize10',
+            'doorprize11',
             'doorprize12',
             'doorprize13',
             'doorprize14',
@@ -54,7 +56,21 @@ class ShuffleController extends Controller
         $doorprize->name           = $request->name_model;
         $doorprize->doorprize        = $request->doorprize_model;
         $doorprize->save();
-        return redirect('/shuffle')->with('message', 'Departments updated.');
+
+        $company = Participant::where('number', $request->number_model)->first();
+        $company->delete();
+
+        Alert::success('Success', 'Data Pemenang berhasil disimpan');
+        return redirect('/shuffle');
+    }
+
+    public function cancel($id)
+    {
+        $participant = Participant::where('number', $id)->first();
+        $participant->delete();
+        return response()->json([
+            'success' => 'Cancel data'
+        ], 200);
     }
 
     public function participantbyid($id)
@@ -62,26 +78,25 @@ class ShuffleController extends Controller
 
         if ($id == 1) {
             $participant = Participant::where('doorprize', '1')->first();
-        } elseif ($id == 2){
+        } elseif ($id == 2) {
             $participant = Participant::where('doorprize', '2')->first();
-        } elseif ($id == 3){
+        } elseif ($id == 3) {
             $participant = Participant::where('doorprize', '3')->first();
-        } elseif ($id == 4){
+        } elseif ($id == 4) {
             $participant = Participant::where('doorprize', '4')->first();
-        } elseif ($id == 5){
+        } elseif ($id == 5) {
             $participant = Participant::where('doorprize', '5')->first();
-        } elseif ($id == 6){
+        } elseif ($id == 6) {
             $participant = Participant::where('doorprize', '6')->first();
-        } else{
+        } else {
             $participant = Participant::where('doorprize', null)
-            ->inRandomOrder()
-            ->limit(1)
-            ->first();
+                ->inRandomOrder()
+                ->limit(1)
+                ->first();
         }
         return response()->json([
             'error' => false,
-            'detail'=> $participant
+            'detail' => $participant
         ], 200);
     }
-
 }

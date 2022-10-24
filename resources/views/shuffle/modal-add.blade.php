@@ -57,7 +57,7 @@
                                         <!--begin::Progress-->
                                         <div class="d-flex flex-column mw-200px">
                                             <div class="d-flex align-items-center mb-2">
-                                                <a href="{{url('/shuffle')}}" class="btn btn-sm btn-secondary">Cancel</a>
+                                                <a onclick="cancelparticipant()" class="btn btn-sm btn-danger">Cancel</a>
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-sm btn-primary">Continue</button>

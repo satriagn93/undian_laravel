@@ -7,7 +7,7 @@
             <!--begin::Page title-->
             <div class="page-title d-flex flex-column me-5 py-2">
                 <!--begin::Title-->
-                <h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">Raffles</h1>
+                <h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">Doorprize</h1>
                 <!--end::Title-->
                 <!--begin::Breadcrumb-->
                 <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 pt-1">
@@ -25,7 +25,7 @@
                     </li>
                     <!--end::Item-->
                     <!--begin::Item-->
-                    <li class="breadcrumb-item text-dark">Raffles</li>
+                    <li class="breadcrumb-item text-dark">Doorprize</li>
                     <!--end::Item-->
                 </ul>
             </div>
@@ -42,7 +42,7 @@
                                 <span class="text-gray-400 mt-1 fw-semibold fs-6">Total 16</span>
                             </h3>
                         </div>
-                        <div class="card-body pt-0">
+                        <div style="margin-top: 15px;" class="card-body pt-0">
                             <div class="d-flex flex-stack">
                                 <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
@@ -388,7 +388,7 @@
                             <div class="card card-flush h-lg-100">
                                 <div class="card-header py-7 mb-3">
                                     <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-gray-800">Form undian <span id="p1value"></span></span>
+                                        <span class="card-label fw-bold text-gray-800"><b>Form undian <span id="p1value"></span></b></span>
                                         <span class="text-gray-400 mt-1 fw-semibold fs-6"> </span>
                                     </h3>
                                 </div>
@@ -396,12 +396,12 @@
                                 <div id="formdiv" style="display: none;" class="card-body pt-0">
                                     <label for="exampleFormControlInput1" class="form-label">Nomor Undian</label>
                                     <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="names" id="divname"></div>
-                                    
+
                                     <br>
                                     <div class="card-toolbar">
                                         <a class="btn btn-sm btn-success roll" id="btn_start">Start</a> &nbsp &nbsp
-                                        <a href="{{url('/shuffle')}}" class="btn btn-sm btn-secondary">Reset</a> &nbsp &nbsp 
-                                        <a onclick="addshuffle()" class="btn btn-sm btn-primary" id="btn_ok" style="display: none;">OK !</a>
+                                        <a href="{{url('/shuffle')}}" class="btn btn-sm btn-secondary">Reset</a> &nbsp &nbsp
+                                        <a onclick="addshuffle()" class="btn btn-sm btn-primary" id="btn_ok" style="display: none;">Get Winner</a>
                                     </div>
                                 </div>
                             </div>
@@ -411,22 +411,67 @@
                                 <div class="card-header pt-7 mb-5">
                                     <h3 class="card-title align-items-start flex-column">
                                         <span class="card-label fw-bold text-gray-800">Hadiah yang didapat</span>
-                                        <span class="text-gray-400 mt-1 fw-semibold fs-6">Doorprize 1</span>
+                                        <!-- <span class="text-gray-400 mt-1 fw-semibold fs-6">Doorprize 1</span> -->
                                     </h3>
                                 </div>
                                 <div class="card-body pt-0">
                                     <div class="py-10 text-center">
-                                        <img src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar1" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar2" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar3" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar4" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar5" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar6" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar7" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar8" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar9" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar10" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar11" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar12" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar13" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar14" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar15" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                        <img style="display: none;" id="gambar16" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- <div class="col-xxl-12">
+                            <div class="card card-flush h-lg-100">
+                                <div class="card-header py-7 mb-3">
+                                    <h3 class="card-title align-items-start flex-column">
+                                        <span class="card-label fw-bold text-gray-800"><b>List Hadiah <span id="p1value"></span></b></span>
+                                        <span class="text-gray-400 mt-1 fw-semibold fs-6"> </span>
+                                    </h3>
+                                </div>
+                                <div class="tns tns-default">
+                                    <div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true" data-tns-nav="false" data-tns-items="3" data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1">
+
+                                        <div class="text-center px-5 py-5">
+                                            <img src="{{asset('template')}}/media/stock/600x400/img-1.jpg" class="card-rounded mw-100" alt="" />
+                                        </div>
+                                        ...
+                                    </div>
+                                    <button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_prev1">
+                                        <span class="svg-icon svg-icon-3x">
+                                            ...
+                                        </span>
+                                    </button>
+                                    <button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_next1">
+                                        <span class="svg-icon svg-icon-3x">
+                                            ...
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+@include('sweetalert::alert')
 @include('shuffle.modal-add')
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script>
@@ -446,7 +491,7 @@
         });
     });
 
-    const ENTRANTSS = ["469245532658423", "767163378942939"];
+    const ENTRANTSS = ["124247982136727", "214336184271138", "328273182550963", "806938199783702", "307540958602645"];
 
     const rollEl = document.querySelector(".roll");
     const namesEl = document.querySelector(".names");
@@ -473,7 +518,6 @@
 
         setTimeout(internalCallback, factor);
     }
-
 </script>
 @endsection
 @push('js')

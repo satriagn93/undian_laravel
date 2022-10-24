@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 use App\Models\Participant;
 use Illuminate\Support\Facades\DB;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ParticipantController extends Controller
 {
@@ -28,6 +29,7 @@ class ParticipantController extends Controller
         $saveabsent->email = $request->email;
         $saveabsent->url = $url;
         $saveabsent->save();
+        Alert::success('Success', 'Data berhasil disimpan');
         return redirect('/participant');
     }
 }

@@ -102,7 +102,7 @@ License: For each use you must have a valid license purchased only from above li
                                         <!--begin::Wrapper-->
                                         <div class="px-10 mb-10">
                                             <!--begin::Heading-->
-                                            <h3 class="text-white mb-2 fw-bolder ttext-center text-uppercase mb-6">Sell On Metronic</h3>
+                                            <h3 class="text-white mb-2 fw-bolder ttext-center text-uppercase mb-6">Aplikasi Doorprize</h3>
                                             <!--end::Heading-->
                                             <!--begin::List-->
                                             <div class="mb-7">
@@ -116,7 +116,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span class="text-white opacity-75">Easy Tool</span>
+                                                    <span class="text-white opacity-75">Data Participant</span>
                                                 </div>
                                                 <!--end::Item-->
                                                 <!--begin::Item-->
@@ -129,27 +129,9 @@ License: For each use you must have a valid license purchased only from above li
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <span class="text-white opacity-75">Fast Reports</span>
+                                                    <span class="text-white opacity-75">Halaman Undian</span>
                                                 </div>
-                                                <!--end::Item-->
-                                                <!--begin::Item-->
-                                                <div class="d-flex align-items-center mb-2">
-                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
-                                                    <span class="svg-icon svg-icon-4 svg-icon-white opacity-75 me-3">
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
-                                                            <path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
-                                                        </svg>
-                                                    </span>
-                                                    <!--end::Svg Icon-->
-                                                    <span class="text-white opacity-75">Up To 75% Share</span>
-                                                </div>
-                                                <!--end::Item-->
                                             </div>
-                                            <!--end::List-->
-                                            <!--begin::Link-->
-                                            <a href="{{url('/participant')}}" class="btn btn-hover-rise text-white bg-white bg-opacity-10 text-uppercase fs-7 fw-bold">Go To Dashboard</a>
-                                            <!--end::Link-->
                                         </div>
                                         <!--end::Wrapper-->
                                         <!--begin::Illustrations-->
@@ -168,14 +150,14 @@ License: For each use you must have a valid license purchased only from above li
                                     <!--begin::Col-->
                                     <div class="col-sm-6">
                                         <!--begin::Card-->
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#kt_modal_create_project" class="card border-0 shadow-none min-h-200px mb-7" style="background-color: #F9666E">
+                                        <a href="{{url('/shuffle')}}" class="card border-0 shadow-none min-h-200px mb-7" style="background-color: #F9666E">
                                             <!--begin::Card body-->
                                             <div class="card-body d-flex flex-column flex-center text-center">
                                                 <!--begin::Illustrations-->
                                                 <img class="mw-100 h-100px mb-7 mx-auto" src="{{asset('template')}}/media/illustrations/sigma-1/4.png" />
                                                 <!--end::Illustrations-->
                                                 <!--begin::Heading-->
-                                                <h4 class="text-white fw-bold text-uppercase">Start A Project</h4>
+                                                <h4 class="text-white fw-bold text-uppercase">Start Doorprize</h4>
                                                 <!--end::Heading-->
                                             </div>
                                             <!--end::Card body-->
@@ -193,7 +175,7 @@ License: For each use you must have a valid license purchased only from above li
                                                 <img class="mw-100 h-100px mb-7 mx-auto" src="{{asset('template')}}/media/illustrations/sigma-1/5.png" />
                                                 <!--end::Illustrations-->
                                                 <!--begin::Heading-->
-                                                <h4 class="text-white fw-bold text-uppercase">Create Account</h4>
+                                                <h4 class="text-white fw-bold text-uppercase">Participant</h4>
                                                 <!--end::Heading-->
                                             </div>
                                             <!--end::Card body-->
@@ -265,8 +247,6 @@ License: For each use you must have a valid license purchased only from above li
                 <div class="d-flex flex-stack mb-5 mb-lg-8" id="kt_sidebar_header">
                     <!--begin::Title-->
                     <h2 class="text-white">Shuffle</h2>
-                    <!--end::Title-->
-                    <!--begin::Menu-->
                     <div class="ms-1">
                         <button class="btn btn-icon btn-sm btn-color-white btn-active-color-primary me-n5" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
                             <!--begin::Svg Icon | path: icons/duotune/general/gen023.svg-->
@@ -280,73 +260,6 @@ License: For each use you must have a valid license purchased only from above li
                             </span>
                             <!--end::Svg Icon-->
                         </button>
-                        <!--begin::Menu 2-->
-                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
-                            <!--begin::Menu item-->
-                            <div class="menu-item px-3">
-                                <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-                            </div>
-                            <!--end::Menu item-->
-                            <!--begin::Menu separator-->
-                            <div class="separator mb-3 opacity-75"></div>
-                            <!--end::Menu separator-->
-                            <!--begin::Menu item-->
-                            <div class="menu-item px-3">
-                                <a href="#" class="menu-link px-3">New Ticket</a>
-                            </div>
-                            <!--end::Menu item-->
-                            <!--begin::Menu item-->
-                            <div class="menu-item px-3">
-                                <a href="#" class="menu-link px-3">New Customer</a>
-                            </div>
-                            <!--end::Menu item-->
-                            <!--begin::Menu item-->
-                            <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                <!--begin::Menu item-->
-                                <a href="#" class="menu-link px-3">
-                                    <span class="menu-title">New Group</span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <!--end::Menu item-->
-                                <!--begin::Menu sub-->
-                                <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                    <!--begin::Menu item-->
-                                    <div class="menu-item px-3">
-                                        <a href="#" class="menu-link px-3">Admin Group</a>
-                                    </div>
-                                    <!--end::Menu item-->
-                                    <!--begin::Menu item-->
-                                    <div class="menu-item px-3">
-                                        <a href="#" class="menu-link px-3">Staff Group</a>
-                                    </div>
-                                    <!--end::Menu item-->
-                                    <!--begin::Menu item-->
-                                    <div class="menu-item px-3">
-                                        <a href="#" class="menu-link px-3">Member Group</a>
-                                    </div>
-                                    <!--end::Menu item-->
-                                </div>
-                                <!--end::Menu sub-->
-                            </div>
-                            <!--end::Menu item-->
-                            <!--begin::Menu item-->
-                            <div class="menu-item px-3">
-                                <a href="#" class="menu-link px-3">New Contact</a>
-                            </div>
-                            <!--end::Menu item-->
-                            <!--begin::Menu separator-->
-                            <div class="separator mt-3 opacity-75"></div>
-                            <!--end::Menu separator-->
-                            <!--begin::Menu item-->
-                            <div class="menu-item px-3">
-                                <div class="menu-content px-3 py-3">
-                                    <a class="btn btn-primary btn-sm px-4" href="#">Generate Reports</a>
-                                </div>
-                            </div>
-                            <!--end::Menu item-->
-                        </div>
-                        <!--end::Menu 2-->
-                        <!--end::Menu-->
                     </div>
                 </div>
                 <!--end::Header-->
@@ -358,58 +271,18 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="timeline">
                             <!--begin::Timeline item-->
                             <div class="timeline-item">
-                                <!--begin::Timeline line-->
-                                <div class="timeline-line w-40px"></div>
-                                <!--end::Timeline line-->
-                                <!--begin::Timeline icon-->
-                                <div class="timeline-icon symbol symbol-circle symbol-40px me-4">
-                                    <div class="symbol-label">
-                                        <!--begin::Svg Icon | path: icons/duotune/communication/com003.svg-->
-                                        <span class="svg-icon svg-icon-2 svg-icon-white">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path opacity="0.3" d="M2 4V16C2 16.6 2.4 17 3 17H13L16.6 20.6C17.1 21.1 18 20.8 18 20V17H21C21.6 17 22 16.6 22 16V4C22 3.4 21.6 3 21 3H3C2.4 3 2 3.4 2 4Z" fill="currentColor" />
-                                                <path d="M18 9H6C5.4 9 5 8.6 5 8C5 7.4 5.4 7 6 7H18C18.6 7 19 7.4 19 8C19 8.6 18.6 9 18 9ZM16 12C16 11.4 15.6 11 15 11H6C5.4 11 5 11.4 5 12C5 12.6 5.4 13 6 13H15C15.6 13 16 12.6 16 12Z" fill="currentColor" />
-                                            </svg>
-                                        </span>
-                                        <!--end::Svg Icon-->
-                                    </div>
-                                </div>
-                                <!--end::Timeline icon-->
-                                <!--begin::Timeline content-->
                                 <div class="timeline-content mb-10 mt-n1">
                                     <!--begin::Timeline heading-->
                                     <div class="pe-3 mb-5">
                                         <!--begin::Title-->
-                                        <div class="fs-5 fw-semibold mb-2 text-white">Created 2 new tasks in "Development"</div>
+                                        <div class="fs-5 fw-semibold mb-2 text-white">Hadiah Pertama</div>
                                         <!--end::Title-->
                                         <!--begin::Description-->
                                         <div class="d-flex align-items-center mt-1 fs-6">
-                                            <!--begin::Info-->
-                                            <div class="text-white opacity-50 me-2 fs-7">Added at 4:23 PM by</div>
-                                            <!--end::Info-->
-                                            <!--begin::User-->
-                                            <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
-                                                <img src="{{asset('template')}}/media/avatars/300-14.jpg" alt="img" />
-                                            </div>
-                                            <!--end::User-->
+
                                         </div>
                                         <!--end::Description-->
                                     </div>
-                                    <!--end::Timeline heading-->
-                                    <!--begin::Timeline details-->
-                                    <div class="pb-5">
-                                        <!--begin::Record-->
-                                        <div class="d-flex flex-stack border rounded px-7 py-3">
-                                            <!--begin::Title-->
-                                            <a href="#" class="fs-5 text-white text-hover-success fw-semibold w-375px">Meeting with customer</a>
-                                            <!--end::Title-->
-                                            <!--begin::Action-->
-                                            <a href="#" class="btn btn-sm btn-hover-rise text-white bg-white bg-opacity-10">View</a>
-                                            <!--end::Action-->
-                                        </div>
-                                        <!--end::Record-->
-                                    </div>
-                                    <!--end::Timeline details-->
                                 </div>
                                 <!--end::Timeline content-->
                             </div>
