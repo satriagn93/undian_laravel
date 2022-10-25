@@ -392,7 +392,7 @@
                                         <span class="text-gray-400 mt-1 fw-semibold fs-6"> </span>
                                     </h3>
                                 </div>
-                                <input type="text" class="form-control form-control-sm" id="doorprizevalue" name="doorprizevalue">
+                                <input type="text" class="form-control form-control-sm" id="doorprizevalue" name="doorprizevalue" hidden>
                                 <div id="formdiv" style="display: none;" class="card-body pt-0">
                                     <label for="exampleFormControlInput1" class="form-label">Nomor Undian</label>
                                     <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="names" id="divname"></div>
