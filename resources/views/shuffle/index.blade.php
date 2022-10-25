@@ -1,7 +1,7 @@
 @extends('layout.template')
 @section('title','Home')
 @section('content')
-<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+<div style="margin-top: 20px;" class="content d-flex flex-column flex-column-fluid" id="kt_content">
     <div class="toolbar d-flex flex-stack mb-3 mb-lg-5" id="kt_toolbar">
         <div id="kt_toolbar_container" class="container-fluid d-flex flex-stack flex-wrap">
             <!--begin::Page title-->
@@ -385,7 +385,7 @@
                 <div class="col-xl-8 mb-5 mb-xl-10">
                     <div class="row g-5 g-xl-10 h-xxl-50 mb-0 mb-xl-10">
                         <div class="col-xxl-6">
-                            <div class="card card-flush h-lg-100">
+                            <div class="card card-flush h-lg-100" style="background-image:url('{{asset('template')}}/media/svg/shapes/wave-bg-red.svg')">
                                 <div class="card-header py-7 mb-3">
                                     <h3 class="card-title align-items-start flex-column">
                                         <span class="card-label fw-bold text-gray-800"><b>Form undian <span id="p1value"></span></b></span>
@@ -395,7 +395,8 @@
                                 <input type="text" class="form-control form-control-sm" id="doorprizevalue" name="doorprizevalue" hidden>
                                 <div id="formdiv" style="display: none;" class="card-body pt-0">
                                     <label for="exampleFormControlInput1" class="form-label">Nomor Undian</label>
-                                    <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="names" id="divname"></div>
+                                    <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="numbers" id="divnumber"></div>
+                                    <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 12px;border-radius: 4px; text-align: center; vertical-align: center;" class="names" id="divname"></div>
 
                                     <br>
                                     <div class="card-toolbar">
@@ -436,6 +437,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- <div class="col-xxl-12">
                             <div class="card card-flush h-lg-100">
                                 <div class="card-header py-7 mb-3">
@@ -491,7 +493,9 @@
         });
     });
 
-    const ENTRANTSS = ["124247982136727", "214336184271138", "328273182550963", "806938199783702", "307540958602645"];
+    const ENTRANTSS = ["726178924271138", "214336184271138", "328273182550963", "806938199783702", "307540958602645"];
+
+    const ENTRANTSSNAME = ["Rido Saputra", "Zainal Abidin", "Girinanda", "Rima Putri", "Franky", "Jokowi"];
 
     const rollEl = document.querySelector(".roll");
     const namesEl = document.querySelector(".names");
@@ -503,7 +507,7 @@
     }
 
     function trigerabsent() {
-        setDeceleratingTimeout(randomName, 0, 5000);
+        setDeceleratingTimeout(randomName, -2, 500000);
     }
 
     function setDeceleratingTimeout(callback, factor, times) {

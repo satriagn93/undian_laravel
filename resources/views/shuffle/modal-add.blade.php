@@ -4,7 +4,7 @@
         <!--begin::Modal content-->
         <div class="modal-content">
             <!--begin::Modal header-->
-            <div class="modal-header" style="background-color: #023e9f;">
+            <div class="modal-header" style="background-color: #490402;">
                 <!--begin::Modal title-->
                 <h2> </h2>
             </div>

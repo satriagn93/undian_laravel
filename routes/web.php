@@ -22,6 +22,7 @@ Route::get('/ikan', [Controller::class, 'dashboard'])->name('dashboard');
 Route::get('/', [ShuffleController::class, 'index'])->name('shuffle_index');
 Route::get('/participant', [ParticipantController::class, 'index'])->name('participant_index');
 Route::post('/participant/store', [ParticipantController::class, 'store'])->name('participant.store');
+Route::post('/upload_participants', [ParticipantController::class, 'uploadParticipants'])->name('upload_participants');
 Route::get('/absent/{number}', [AbsentController::class, 'store'])->name('absent_store');
 Route::get('/shuffle', [ShuffleController::class, 'index'])->name('shuffle_index');
 Route::post('/getabsent', [AbsentController::class, 'getabsent'])->name('getabsent');

@@ -1,4 +1,4 @@
-<div id="kt_aside" class="aside py-9" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
+<div style="margin-top: 20px;" id="kt_aside" class="aside py-9" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
     <!--begin::Aside menu-->
     <div class="aside-menu flex-column-fluid ps-5 pe-3 mb-7" id="kt_aside_menu">
         <!--begin::Aside Menu-->
@@ -24,11 +24,11 @@
                     </a>
                 </div>
 
-                <div class="menu-item" style="margin-top: 20px">
+                <!-- <div class="menu-item" style="margin-top: 20px">
                     <div class="py-10 text-center">
                         <img src="http://127.0.0.1:8000/template/media/illustrations/sigma-1/11.png" class="w-200px" alt="">
                     </div>
-                </div>
+                </div> -->
 
             </div>
             <!--end::Menu-->

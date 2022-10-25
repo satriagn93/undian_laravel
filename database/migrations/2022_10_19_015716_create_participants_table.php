@@ -19,6 +19,7 @@ class CreateParticipantsTable extends Migration
             $table->string('name')->nullable();
             $table->string('doorprize')->nullable();
             $table->string('email')->nullable();
+            $table->string('company')->nullable();
             $table->string('url')->nullable();
             $table->timestamps();
         });
