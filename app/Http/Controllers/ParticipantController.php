@@ -42,4 +42,30 @@ class ParticipantController extends Controller
         Alert::success('Success', 'Data berhasil disimpan');
         return redirect('/participant');
     }
+
+    public function getparticipant()
+    {
+        $data = DB::table('participants')
+            ->select('participants.number')
+            ->orderBy('participants.id', 'DESC')
+            ->get();
+        $number = [];
+        foreach ($data as $value) {
+            $number[] .= $value->number;
+        };
+        return response()->json($number);
+    }
+
+    public function nameparticipant()
+    {
+        $data = DB::table('participants')
+            ->select('participants.name')
+            ->orderBy('participants.id', 'DESC')
+            ->get();
+        $name = [];
+        foreach ($data as $value) {
+            $name[] .= $value->name;
+        };
+        return response()->json($name);
+    }
 }

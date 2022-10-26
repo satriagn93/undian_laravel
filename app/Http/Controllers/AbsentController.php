@@ -17,15 +17,4 @@ class AbsentController extends Controller
         $saveabsent->priority = '0';
         $saveabsent->save();
     }
-
-    public function getabsent()
-    {
-        $dataabsen = DB::table('absents as abs')
-            ->select('abs.number')
-            ->orderBy('abs.id', 'DESC')
-            ->get();
-        $response = json_decode($dataabsen, true);
-        return response()->json($response);
-        // dd($ikan);
-    }
 }

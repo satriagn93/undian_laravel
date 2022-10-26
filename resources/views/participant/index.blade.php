@@ -39,7 +39,7 @@
                 <form action="{{ route('upload_participants') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="input-group mb-3">
-                        <input type="file" name="file" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="file" name="file" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" required>
                         <button class="btn btn-sm btn-primary" type="submit" id="button-addon2">
                             <span class="svg-icon svg-icon-2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

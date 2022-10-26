@@ -385,7 +385,7 @@
                 <div class="col-xl-8 mb-5 mb-xl-10">
                     <div class="row g-5 g-xl-10 h-xxl-50 mb-0 mb-xl-10">
                         <div class="col-xxl-6">
-                            <div class="card card-flush h-lg-100" style="background-image:url('{{asset('template')}}/media/svg/shapes/wave-bg-red.svg')">
+                            <div class="card card-flush h-lg-100">
                                 <div class="card-header py-7 mb-3">
                                     <h3 class="card-title align-items-start flex-column">
                                         <span class="card-label fw-bold text-gray-800"><b>Form undian <span id="p1value"></span></b></span>
@@ -395,9 +395,8 @@
                                 <input type="text" class="form-control form-control-sm" id="doorprizevalue" name="doorprizevalue" hidden>
                                 <div id="formdiv" style="display: none;" class="card-body pt-0">
                                     <label for="exampleFormControlInput1" class="form-label">Nomor Undian</label>
+                                    <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="names" id="divname"></div>
                                     <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="numbers" id="divnumber"></div>
-                                    <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 12px;border-radius: 4px; text-align: center; vertical-align: center;" class="names" id="divname"></div>
-
                                     <br>
                                     <div class="card-toolbar">
                                         <a class="btn btn-sm btn-success roll" id="btn_start">Start</a> &nbsp &nbsp
@@ -481,47 +480,83 @@
     $('#btn_start').click(function() {
         $("#btn_ok").show('');
         $.ajax({
-            url: 'getabsent',
+            url: 'getparticipant',
             type: 'post',
             data: {
                 _token: CSRF_TOKEN,
             },
             dataType: 'json',
             success: function(response) {
-                trigerabsent(response);
+                var values = Object.values(response);
+
+                trigerabsent()
+                const ENTRANTSS = values;
+                const rollEl = document.querySelector(".roll");
+                const namesEl = document.querySelector(".names");
+
+                function randomName() {
+                    const rand = Math.floor(Math.random() * ENTRANTSS.length);
+                    const name = ENTRANTSS[rand];
+                    namesEl.innerText = name;
+                }
+
+                function trigerabsent() {
+                    setDeceleratingTimeout(randomName, -2, 500000);
+                }
+
+                function setDeceleratingTimeout(callback, factor, times) {
+                    const internalCallback = ((t, counter) => {
+                        return () => {
+                            if (--t > 0) {
+                                setTimeout(internalCallback, ++counter * factor);
+                                callback();
+                            }
+                        };
+                    })(times, 0);
+                    setTimeout(internalCallback, factor);
+                }
+            }
+        });
+
+        $.ajax({
+            url: 'nameparticipant',
+            type: 'post',
+            data: {
+                _token: CSRF_TOKEN,
+            },
+            dataType: 'json',
+            success: function(response) {
+                var values = Object.values(response);
+
+                trigerabsent()
+                const ENTRANTSS = values;
+                const rollEl = document.querySelector(".roll");
+                const namesEl = document.querySelector(".numbers");
+
+                function randomName() {
+                    const rand = Math.floor(Math.random() * ENTRANTSS.length);
+                    const name = ENTRANTSS[rand];
+                    namesEl.innerText = name;
+                }
+
+                function trigerabsent() {
+                    setDeceleratingTimeout(randomName, -2, 500000);
+                }
+
+                function setDeceleratingTimeout(callback, factor, times) {
+                    const internalCallback = ((t, counter) => {
+                        return () => {
+                            if (--t > 0) {
+                                setTimeout(internalCallback, ++counter * factor);
+                                callback();
+                            }
+                        };
+                    })(times, 0);
+                    setTimeout(internalCallback, factor);
+                }
             }
         });
     });
-
-    const ENTRANTSS = ["726178924271138", "214336184271138", "328273182550963", "806938199783702", "307540958602645"];
-
-    const ENTRANTSSNAME = ["Rido Saputra", "Zainal Abidin", "Girinanda", "Rima Putri", "Franky", "Jokowi"];
-
-    const rollEl = document.querySelector(".roll");
-    const namesEl = document.querySelector(".names");
-
-    function randomName() {
-        const rand = Math.floor(Math.random() * ENTRANTSS.length);
-        const name = ENTRANTSS[rand];
-        namesEl.innerText = name;
-    }
-
-    function trigerabsent() {
-        setDeceleratingTimeout(randomName, -2, 500000);
-    }
-
-    function setDeceleratingTimeout(callback, factor, times) {
-        const internalCallback = ((t, counter) => {
-            return () => {
-                if (--t > 0) {
-                    setTimeout(internalCallback, ++counter * factor);
-                    callback();
-                }
-            };
-        })(times, 0);
-
-        setTimeout(internalCallback, factor);
-    }
 </script>
 @endsection
 @push('js')
