@@ -2,33 +2,46 @@
 @section('title','Home')
 @section('content')
 <div style="margin-top: 20px;" class="content d-flex flex-column flex-column-fluid" id="kt_content">
-    <div class="toolbar d-flex flex-stack mb-3 mb-lg-5" id="kt_toolbar">
-        <div id="kt_toolbar_container" class="container-fluid d-flex flex-stack flex-wrap">
-            <!--begin::Page title-->
-            <div class="page-title d-flex flex-column me-5 py-2">
-                <!--begin::Title-->
-                <h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">Doorprize</h1>
-                <!--end::Title-->
-                <!--begin::Breadcrumb-->
-                <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 pt-1">
-                    <!--begin::Item-->
-                    <li class="breadcrumb-item text-muted">
-                        <a href="../../demo10/dist/index.html" class="text-muted text-hover-primary">Home</a>
-                    </li>
-                    <!--end::Item-->
-                    <!--begin::Item-->
-                    <li class="breadcrumb-item">
-                        <span class="bullet bg-gray-200 w-5px h-2px"></span>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <span class="bullet bg-gray-200 w-5px h-2px"></span>
-                    </li>
-                    <!--end::Item-->
-                    <!--begin::Item-->
-                    <li class="breadcrumb-item text-dark">Doorprize</li>
-                    <!--end::Item-->
-                </ul>
+    <div class="card card-flush pb-0 bgi-position-y-center bgi-no-repeat mb-10" style="margin-left: 30px;margin-right: 30px;">
+        <div class="card-header pt-10">
+            <div class="d-flex align-items-center">
+                <div class="symbol symbol-circle me-5">
+                    <div class="symbol-label bg-transparent text-primary border border-secondary border-dashed">
+                        <span class="svg-icon svg-icon-2x svg-icon-primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.302 11.35L12.002 20.55H21.202C21.802 20.55 22.202 19.85 21.902 19.35L17.302 11.35Z" fill="currentColor"></path>
+                                <path opacity="0.3" d="M12.002 20.55H2.802C2.202 20.55 1.80202 19.85 2.10202 19.35L6.70203 11.45L12.002 20.55ZM11.302 3.45L6.70203 11.35H17.302L12.702 3.45C12.402 2.85 11.602 2.85 11.302 3.45Z" fill="currentColor"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <h2 class="mb-1">Menu Doorprize</h2>
+                    <div class="text-muted fw-bold">
+                        <a href="{{url('/shuffle')}}">Dashboard</a>
+                        <span class="mx-3">|</span>
+                        <a href="{{url('/shuffle')}}">Menu Doorprize</a>
+                    </div>
+                </div>
             </div>
+
+            <p align="right">
+                <a href="{{url('/shuffle')}}" class="btn btn-bg-light btn-active-icon-danger btn-text-info me-2 mb-2">
+
+                    <span class="svg-icon svg-icon-1">
+                        <i style="font-size: 20px;" class="bi bi-gift"></i>
+                    </span>
+                    Menu Doorprize
+                </a>
+                <a href="{{url('/participant')}}" class="btn btn-bg-light btn-active-icon-danger btn-text-info me-2 mb-2">
+                    <span class="svg-icon svg-icon-1">
+                        <i style="font-size: 20px;" class="bi bi-people"></i>
+                    </span>
+                    Menu Participant
+                </a>
+            </p>
+        </div>
+        <div class="card-body pb-0">
         </div>
     </div>
     <div class="post d-flex flex-column-fluid" id="kt_post">
@@ -394,15 +407,29 @@
                                 </div>
                                 <input type="text" class="form-control form-control-sm" id="doorprizevalue" name="doorprizevalue" hidden>
                                 <div id="formdiv" style="display: none;" class="card-body pt-0">
-                                    <label for="exampleFormControlInput1" class="form-label">Nomor Undian</label>
-                                    <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="names" id="divname"></div>
-                                    <div style="background-color: #eae9e9; width: 320px; height: 50px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="numbers" id="divnumber"></div>
-                                    <br>
-                                    <div class="card-toolbar">
-                                        <a class="btn btn-sm btn-success roll" id="btn_start">Start</a> &nbsp &nbsp
-                                        <a href="{{url('/shuffle')}}" class="btn btn-sm btn-secondary">Reset</a> &nbsp &nbsp
-                                        <a onclick="addshuffle()" class="btn btn-sm btn-primary" id="btn_ok" style="display: none;">Get Winner</a>
+                                    <div class="card h-55px bgi-no-repeat bgi-size-contain card-xl-stretch mb-5 mb-xl-8">
+                                        <!--begin::Body-->
+                                        <div class="card-body d-flex flex-column justify-content-between">
+                                            <!--begin::Title-->
+                                            <h1 class="text-white fw-bold mb-5">
+                                                <div style="background-color: #774949; width: 320px; height: 40px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="names" id="divname"></div>
+                                                <br>
+                                                <div style="background-color: #774949; width: 320px; height: 40px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="numbers" id="divnumber"></div>
+                                            </h1>
+                                            <!--end::Title-->
+                                            <!--begin::Action-->
+                                            <div class="m-0">
+                                                <br>
+                                                <a class="btn btn-sm btn-success roll" id="btn_start">Start</a> &nbsp &nbsp
+                                                <a href="{{url('/shuffle')}}" class="btn btn-sm btn-secondary">Reset</a> &nbsp &nbsp
+                                                <a onclick="addshuffle()" class="btn btn-sm btn-primary" id="btn_ok" style="display: none;">Get Winner</a>
+                                            </div>
+                                            <!--begin::Action-->
+                                        </div>
+                                        <!--end::Body-->
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
