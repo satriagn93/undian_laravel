@@ -4,7 +4,7 @@
         <!--begin::Modal content-->
         <div class="modal-content">
             <!--begin::Modal header-->
-            <div class="modal-header" style="background-color: #490402;">
+            <div class="modal-header">
                 <!--begin::Modal title-->
                 <h2> </h2>
             </div>
@@ -38,8 +38,10 @@
                                         <br>
                                         <!--begin::Name-->
                                         <div class="d-flex align-items-center">
-                                            <input style="font-size: 20px; color:#6d31ad" type="text" class="form-control form-control-sm" id="number_model" name="number_model" readonly>
+                                            <input style="font-size: 20px;" type="text" class="form-control form-control-sm" id="number_model" name="number_model" readonly>
                                             <input style="font-size: 30px;" type="text" class="form-control form-control-sm" id="doorprize_model" name="doorprize_model" hidden>
+                                            <input style="font-size: 30px;" type="text" class="form-control form-control-sm" id="email_model" name="email_model" hidden>
+                                            <input style="font-size: 30px;" type="text" class="form-control form-control-sm" id="company_model" name="company_model" hidden>
                                         </div>
                                     </div>
                                     <!--end::Details-->

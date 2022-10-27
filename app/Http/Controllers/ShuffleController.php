@@ -55,6 +55,8 @@ class ShuffleController extends Controller
         $doorprize->number          = $request->number_model;
         $doorprize->name           = $request->name_model;
         $doorprize->doorprize        = $request->doorprize_model;
+        $doorprize->email        = $request->email_model;
+        $doorprize->company        = $request->company_model;
         $doorprize->save();
 
         $company = Participant::where('number', $request->number_model)->first();

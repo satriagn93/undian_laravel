@@ -97,11 +97,9 @@ License: For each use you must have a valid license purchased only from above li
                             <a href="{{url('/shuffle')}}">
                                 <img alt="Logo" src="{{asset('template')}}/media/logos/logo1.png" class="h-25px d-none d-md-block" />
                             </a>
-                            <a>
-                                <img style="width: 400px; height: 100px; margin-left: 300px" alt="Logo" src="{{asset('template')}}/media/logos/banner.jpg" class="d-none d-md-block" />
-                            </a>
                             <!--end::Logo-->
                         </div>
+                        <img alt="Logo" src="{{asset('template')}}/media/logos/banner.jpg" class="h-80px d-none d-md-block" />
                         <!--end::Brand-->
                         <!--begin::Topbar-->
                         <div class="topbar d-flex align-items-stretch">

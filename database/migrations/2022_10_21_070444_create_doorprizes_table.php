@@ -18,6 +18,8 @@ class CreateDoorprizesTable extends Migration
             $table->string('number')->nullable();
             $table->string('name')->nullable();
             $table->string('doorprize')->nullable();
+            $table->string('email')->nullable();
+            $table->string('company')->nullable();
             $table->timestamps();
         });
     }

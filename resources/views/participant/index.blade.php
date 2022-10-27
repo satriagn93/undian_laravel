@@ -4,10 +4,10 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
-<div style="margin-top: 55px;" class="content d-flex flex-column flex-column-fluid" id="kt_content">
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
     <!--begin::Toolbar-->
-    <div class="card card-flush pb-0 bgi-position-y-center bgi-no-repeat mb-10" style="margin-left: 30px;margin-right: 30px;">
-        <div class="card-header pt-10">
+    <div style="border: 0px;" class="card card-flush pb-0 bgi-position-y-center bgi-no-repeat mb-10">
+        <div style="border: 1px;" class="card-header pt-10">
             <div class="d-flex align-items-center">
                 <div class="symbol symbol-circle me-5">
                     <div class="symbol-label bg-transparent text-primary border border-secondary border-dashed">
@@ -22,22 +22,21 @@
                 <div class="d-flex flex-column">
                     <h2 class="mb-1">Menu Participant</h2>
                     <div class="text-muted fw-bold">
-                        <a href="{{url('/shuffle')}}">Dashboard</a>
+                        <a href="{{url('/participant')}}">Dashboard</a>
                         <span class="mx-3">|</span>
-                        <a href="{{url('/shuffle')}}">Menu Participant</a>
+                        <a href="{{url('/participant')}}">Menu Participant</a>
                     </div>
                 </div>
             </div>
 
             <p align="right">
                 <a href="{{url('/shuffle')}}" class="btn btn-bg-light btn-active-icon-danger btn-text-info me-2 mb-2">
-
                     <span class="svg-icon svg-icon-1">
                         <i style="font-size: 20px;" class="bi bi-gift"></i>
                     </span>
                     Menu Doorprize
                 </a>
-                <a href="{{url('/participant')}}" class="btn btn-bg-light btn-active-icon-danger btn-text-info me-2 mb-2">
+                <a href="{{url('/participant')}}" class="btn btn-bg-light btn-icon-danger btn-text-info me-2 mb-2">
                     <span class="svg-icon svg-icon-1">
                         <i style="font-size: 20px;" class="bi bi-people"></i>
                     </span>
@@ -100,7 +99,6 @@
                                 <th>Number</th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>Barcode</th>
                                 <th>Created Date</th>
                                 <th>Updated Date</th>
                             </tr>
@@ -112,7 +110,7 @@
                                 <td>{{$dataparticipants->number}}</td>
                                 <td>{{$dataparticipants->name}}</td>
                                 <td>{{$dataparticipants->email}}</td>
-                                <td style="width: 20px; height: 20px;">{!! DNS2D::getBarcodeHTML($dataparticipants->url, 'QRCODE',3,3) !!}</td>
+                                <!-- <td style="width: 20px; height: 20px;">{!! DNS2D::getBarcodeHTML($dataparticipants->url, 'QRCODE',3,3) !!}</td> -->
                                 <td>{{$dataparticipants->created_at}}</td>
                                 <td>{{$dataparticipants->updated_at}}</td>
                             </tr>

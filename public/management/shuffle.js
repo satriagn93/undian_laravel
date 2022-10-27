@@ -374,11 +374,17 @@ function addshuffle() {
         type: "GET",
         url: "/participantbyid/" + id,
         success: function(data) {
-            $("#edit-Items").modal('show');
+            if (data.detail == null) {
+                Swal.fire('Data Participant kosong')
+            }else{
+                $("#edit-Items").modal('show');
 
-            $("#form-create input[name=name_model]").val(data.detail.name);
-            $("#form-create input[name=number_model]").val(data.detail.number);
-            $("#form-create input[name=doorprize_model]").val(id);
+                $("#form-create input[name=name_model]").val(data.detail.name);
+                $("#form-create input[name=number_model]").val(data.detail.number);
+                $("#form-create input[name=doorprize_model]").val(id);
+                $("#form-create input[name=email_model]").val(data.detail.email);
+                $("#form-create input[name=company_model]").val(data.detail.company);
+            }
         }
     });
 }

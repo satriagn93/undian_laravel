@@ -1,9 +1,9 @@
 @extends('layout.template')
 @section('title','Home')
 @section('content')
-<div style="margin-top: 20px;" class="content d-flex flex-column flex-column-fluid" id="kt_content">
-    <div class="card card-flush pb-0 bgi-position-y-center bgi-no-repeat mb-10" style="margin-left: 30px;margin-right: 30px;">
-        <div class="card-header pt-10">
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div style="border: 0px;" class="card card-flush pb-0 bgi-position-y-center bgi-no-repeat mb-10">
+        <div style="border: 1px;" class="card-header pt-10">
             <div class="d-flex align-items-center">
                 <div class="symbol symbol-circle me-5">
                     <div class="symbol-label bg-transparent text-primary border border-secondary border-dashed">
@@ -26,7 +26,7 @@
             </div>
 
             <p align="right">
-                <a href="{{url('/shuffle')}}" class="btn btn-bg-light btn-active-icon-danger btn-text-info me-2 mb-2">
+                <a href="{{url('/shuffle')}}" class="btn btn-bg-light btn-icon-danger btn-text-info me-2 mb-2">
 
                     <span class="svg-icon svg-icon-1">
                         <i style="font-size: 20px;" class="bi bi-gift"></i>
@@ -44,24 +44,24 @@
         <div class="card-body pb-0">
         </div>
     </div>
+
     <div class="post d-flex flex-column-fluid" id="kt_post">
         <div id="kt_content_container" class="container-xxl">
-            <div class="row gy-5 g-xl-10">
-                <div class="col-xl-4 mb-xl-10">
-                    <div class="card card-flush h-lg-100">
-                        <div class="card-header pt-7">
-                            <h3 class="card-title align-items-start flex-column">
-                                <span class="card-label fw-bold text-gray-800">List Pemenang</span>
-                                <span class="text-gray-400 mt-1 fw-semibold fs-6">Total 16</span>
-                            </h3>
+            <div class="row gy-5 g-xl-8">
+                <div class="col-xl-4">
+                    <div class="card card-xl-stretch mb-xl-8">
+                        <div class="card-header border-2">
+                            <h3 class="card-title fw-bold text-dark">List Pemenang</h3>
+                            <div class="card-toolbar">
+                            </div>
                         </div>
                         <div style="margin-top: 15px;" class="card-body pt-0">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize1->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize1->name}}</a>
+                                        <a style="font-size: medium;" class="text-gray-800 fw-bold ">{{$doorprize1->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize1->number}}</span>
                                         @endif
                                     </div>
@@ -78,11 +78,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize2->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize2->name}}</a>
+                                        <a style="font-size: medium;" class="text-gray-800 fw-bold ">{{$doorprize2->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize2->number}}</span>
                                         @endif
                                     </div>
@@ -100,11 +100,11 @@
 
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize3->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize3->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize3->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize3->number}}</span>
                                         @endif
                                     </div>
@@ -121,11 +121,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize4->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize4->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize4->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize4->number}}</span>
                                         @endif
                                     </div>
@@ -142,11 +142,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize5->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize5->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize5->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize5->number}}</span>
                                         @endif
                                     </div>
@@ -163,11 +163,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize6->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize6->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize6->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize6->number}}</span>
                                         @endif
                                     </div>
@@ -184,11 +184,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize7->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize7->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize7->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize7->number}}</span>
                                         @endif
                                     </div>
@@ -205,11 +205,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize8->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize8->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize8->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize8->number}}</span>
                                         @endif
                                     </div>
@@ -226,11 +226,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize9->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize9->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize9->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize9->number}}</span>
                                         @endif
                                     </div>
@@ -247,11 +247,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize10->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize10->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize10->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize10->number}}</span>
                                         @endif
                                     </div>
@@ -268,11 +268,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize11->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize11->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize11->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize11->number}}</span>
                                         @endif
                                     </div>
@@ -289,11 +289,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize12->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize12->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize12->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize12->number}}</span>
                                         @endif
                                     </div>
@@ -310,11 +310,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize13->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize13->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize13->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize13->number}}</span>
                                         @endif
                                     </div>
@@ -331,11 +331,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize14->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize14->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize14->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize14->number}}</span>
                                         @endif
                                     </div>
@@ -352,11 +352,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize15->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize15->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize15->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize15->number}}</span>
                                         @endif
                                     </div>
@@ -373,11 +373,11 @@
                             </div>
                             <hr style="border-top: 2px dashed grey;">
                             <div class="d-flex flex-stack">
-                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-25px" style="border-radius: 4px" alt="" />
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
                                 <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
                                     <div class="me-5">
                                         @if(isset($doorprize16->name))
-                                        <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">{{$doorprize16->name}}</a>
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize16->name}}</a>
                                         <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize16->number}}</span>
                                         @endif
                                     </div>
@@ -394,107 +394,94 @@
                             </div>
                         </div>
                     </div>
+                    <!--end::List Widget 2-->
                 </div>
-                <div class="col-xl-8 mb-5 mb-xl-10">
-                    <div class="row g-5 g-xl-10 h-xxl-50 mb-0 mb-xl-10">
-                        <div class="col-xxl-6">
-                            <div class="card card-flush h-lg-100">
-                                <div class="card-header py-7 mb-3">
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-gray-800"><b>Form undian <span id="p1value"></span></b></span>
-                                        <span class="text-gray-400 mt-1 fw-semibold fs-6"> </span>
-                                    </h3>
+                <!--end::Col-->
+                <!--begin::Col-->
+                <div class="col-xl-4">
+                    <!--begin::List Widget 6-->
+                    <div class="card card-xl-stretch mb-xl-8">
+                        <!--begin::Header-->
+                        <div class="card-header border-1">
+                            <h3 class="card-title fw-bold text-dark"><span class="card-label fw-bold text-gray-800"><b>Form undian <span id="p1value"></span></b></span></h3>
+                        </div>
+                        <!--end::Header-->
+                        <!--begin::Body-->
+                        <br>
+                        <input type="text" class="form-control form-control-sm" id="doorprizevalue" name="doorprizevalue" hidden>
+                        <div id="formdiv" style="display: none;" class="card-body pt-0">
+                            <!--begin::Item-->
+                            <div style="height: 80px;" class="d-flex align-items-center bg-light-secondary rounded p-5 mb-7">
+                                <div class="flex-grow-1 me-2">
+                                    <span class="text-muted fw-semibold d-block">Nomor Participant</span>
+                                    <a class="fw-bold text-gray-800 text-hover-primary fs-6">
+                                        <p style="font-size: 25px;" class="names" id="divname"></p>
+                                    </a>
                                 </div>
-                                <input type="text" class="form-control form-control-sm" id="doorprizevalue" name="doorprizevalue" hidden>
-                                <div id="formdiv" style="display: none;" class="card-body pt-0">
-                                    <div class="card h-55px bgi-no-repeat bgi-size-contain card-xl-stretch mb-5 mb-xl-8">
-                                        <!--begin::Body-->
-                                        <div class="card-body d-flex flex-column justify-content-between">
-                                            <!--begin::Title-->
-                                            <h1 class="text-white fw-bold mb-5">
-                                                <div style="background-color: #774949; width: 320px; height: 40px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="names" id="divname"></div>
-                                                <br>
-                                                <div style="background-color: #774949; width: 320px; height: 40px; font-size: 30px;border-radius: 4px; text-align: center; vertical-align: center;" class="numbers" id="divnumber"></div>
-                                            </h1>
-                                            <!--end::Title-->
-                                            <!--begin::Action-->
-                                            <div class="m-0">
-                                                <br>
-                                                <a class="btn btn-sm btn-success roll" id="btn_start">Start</a> &nbsp &nbsp
-                                                <a href="{{url('/shuffle')}}" class="btn btn-sm btn-secondary">Reset</a> &nbsp &nbsp
-                                                <a onclick="addshuffle()" class="btn btn-sm btn-primary" id="btn_ok" style="display: none;">Get Winner</a>
-                                            </div>
-                                            <!--begin::Action-->
-                                        </div>
-                                        <!--end::Body-->
-                                    </div>
-
-
+                            </div>
+                            <div style="height: 80px;" class="d-flex align-items-center bg-light-secondary rounded p-5 mb-7">
+                                <div class="flex-grow-1 me-2">
+                                    <span class="text-muted fw-semibold d-block">Nama Participant</span>
+                                    <a class="fw-bold text-gray-800 text-hover-primary fs-6">
+                                        <p style="font-size: 25px;" class="numbers" id="divnumber"></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <div class="d-flex align-items-center bg-light-secondary rounded p-5 mb-7">
+                                <div class="flex-grow-1 me-2">
+                                    <a class="btn btn-sm btn-success roll" id="btn_start">Start</a> &nbsp
+                                    <a href="{{url('/shuffle')}}" class="btn btn-sm btn-secondary">Reset</a> &nbsp
+                                    <a onclick="addshuffle()" class="btn btn-sm btn-primary" id="btn_ok" style="display: none;">Get Winner</a>
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-xxl-6 mb-5 mb-xl-0">
-                            <div class="card card-flush h-lg-100">
-                                <div class="card-header pt-7 mb-5">
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-gray-800">Hadiah yang didapat</span>
-                                        <!-- <span class="text-gray-400 mt-1 fw-semibold fs-6">Doorprize 1</span> -->
-                                    </h3>
-                                </div>
-                                <div class="card-body pt-0">
-                                    <div class="py-10 text-center">
-                                        <img style="display: none;" id="gambar1" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar2" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar3" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar4" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar5" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar6" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar7" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar8" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar9" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar10" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar11" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar12" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar13" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar14" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar15" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                        <img style="display: none;" id="gambar16" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="col-xxl-12">
-                            <div class="card card-flush h-lg-100">
-                                <div class="card-header py-7 mb-3">
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-gray-800"><b>List Hadiah <span id="p1value"></span></b></span>
-                                        <span class="text-gray-400 mt-1 fw-semibold fs-6"> </span>
-                                    </h3>
-                                </div>
-                                <div class="tns tns-default">
-                                    <div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true" data-tns-nav="false" data-tns-items="3" data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1">
-
-                                        <div class="text-center px-5 py-5">
-                                            <img src="{{asset('template')}}/media/stock/600x400/img-1.jpg" class="card-rounded mw-100" alt="" />
-                                        </div>
-                                        ...
-                                    </div>
-                                    <button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_prev1">
-                                        <span class="svg-icon svg-icon-3x">
-                                            ...
-                                        </span>
-                                    </button>
-                                    <button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_next1">
-                                        <span class="svg-icon svg-icon-3x">
-                                            ...
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div> -->
+                        <!--end::Body-->
                     </div>
+                    <!--end::List Widget 6-->
                 </div>
+                <!--end::Col-->
+                <!--begin::Col-->
+                <div class="col-xl-4">
+                    <!--begin::List Widget 4-->
+                    <div class="card card-xl-stretch mb-5 mb-xl-8">
+                        <!--begin::Header-->
+                        <div class="card-header border-1 pt-5">
+                            <h3 class="card-title align-items-start flex-column">
+                                <span class="card-label fw-bold text-dark">Hadiah yang didapat</span>
+                                <span class="text-muted mt-1 fw-semibold fs-7">&nbsp</span>
+                            </h3>
+                            <div class="card-toolbar">
+                            </div>
+                        </div>
+                        <!--end::Header-->
+                        <!--begin::Body-->
+                        <div class="card-body pt-0">
+                            <div class="py-10 text-center">
+                                <img style="display: none;" id="gambar1" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar2" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar3" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar4" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar5" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar6" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar7" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar8" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar9" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar10" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar11" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar12" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar13" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar14" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar15" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar16" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                            </div>
+                        </div>
+                        <!--end::Body-->
+                    </div>
+                    <!--end::List Widget 4-->
+                </div>
+                <!--end::Col-->
             </div>
         </div>
     </div>

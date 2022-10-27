@@ -9,6 +9,7 @@ use App\Models\Participant;
 use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
 use RealRashid\SweetAlert\Facades\Alert;
+use App\Models\Doorprize;
 
 class ParticipantController extends Controller
 {
@@ -37,6 +38,8 @@ class ParticipantController extends Controller
 
     public function uploadParticipants(Request $request)
     {
+        Participant::truncate();
+        Doorprize::truncate();
         Excel::import(new ParticipantsImport, $request->file);
 
         Alert::success('Success', 'Data berhasil disimpan');
