@@ -13,6 +13,10 @@ use App\Models\Doorprize;
 
 class ParticipantController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $dataparticipant = DB::table('participants as prt')

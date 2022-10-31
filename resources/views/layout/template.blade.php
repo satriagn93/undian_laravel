@@ -880,8 +880,12 @@ License: For each use you must have a valid license purchased only from above li
 
                                     <!--end::Menu item-->
                                     <!--begin::Menu item-->
-                                    <div class="menu-item px-5 my-1">
-                                        <a href="" class="menu-link px-5">Account Settings</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                    <div class="menu-item px-5">
+                                        <a href="http://127.0.0.1:8000/logout" class="menu-link px-5" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Sign Out</a>
                                     </div>
                                     <!--end::Menu item-->
                                     <!--begin::Menu item-->

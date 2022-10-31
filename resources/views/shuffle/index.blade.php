@@ -41,8 +41,6 @@
                 </a>
             </p>
         </div>
-        <div class="card-body pb-0">
-        </div>
     </div>
 
     <div class="post d-flex flex-column-fluid" id="kt_post">
@@ -392,6 +390,69 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr style="border-top: 2px dashed grey;">
+                            <div class="d-flex flex-stack">
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
+                                <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
+                                    <div class="me-5">
+                                        @if(isset($doorprize17->name))
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize17->name}}</a>
+                                        <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize17->number}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="m-0">
+                                            <span class="badge badge-light-success fs-base">
+                                                <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
+                                                </span>
+                                                <a href="#" onclick="dp17()"> Win doorprize 17</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="border-top: 2px dashed grey;">
+                            <div class="d-flex flex-stack">
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
+                                <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
+                                    <div class="me-5">
+                                        @if(isset($doorprize18->name))
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize18->name}}</a>
+                                        <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize18->number}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="m-0">
+                                            <span class="badge badge-light-success fs-base">
+                                                <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
+                                                </span>
+                                                <a href="#" onclick="dp18()"> Win doorprize 18</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="border-top: 2px dashed grey;">
+                            <div class="d-flex flex-stack">
+                                <img src="{{asset('template')}}/media/icons/winner.svg" class="me-4 w-30px" style="border-radius: 4px" alt="" />
+                                <div class="d-flex flex-stack flex-row-fluid d-grid gap-2">
+                                    <div class="me-5">
+                                        @if(isset($doorprize19->name))
+                                        <a style="font-size: medium;" href="#" class="text-gray-800 fw-bold ">{{$doorprize19->name}}</a>
+                                        <span class="text-gray-400 fw-semibold fs-7 d-block text-start ps-0">{{$doorprize19->number}}</span>
+                                        @endif
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="m-0">
+                                            <span class="badge badge-light-success fs-base">
+                                                <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
+                                                </span>
+                                                <a href="#" onclick="dp19()"> Win doorprize 19</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--end::List Widget 2-->
@@ -403,7 +464,7 @@
                     <div class="card card-xl-stretch mb-xl-8">
                         <!--begin::Header-->
                         <div class="card-header border-1">
-                            <h3 class="card-title fw-bold text-dark"><span class="card-label fw-bold text-gray-800"><b>Form undian <span id="p1value"></span></b></span></h3>
+                            <h3 class="card-title fw-bold text-dark"><span class="card-label fw-bold text-gray-800"><b>Win doorprize <span id="p1value"></span></b></span></h3>
                         </div>
                         <!--end::Header-->
                         <!--begin::Body-->
@@ -449,7 +510,7 @@
                         <!--begin::Header-->
                         <div class="card-header border-1 pt-5">
                             <h3 class="card-title align-items-start flex-column">
-                                <span class="card-label fw-bold text-dark">Hadiah yang didapat</span>
+                                <span class="card-label fw-bold text-dark">Doorprize</span>
                                 <span class="text-muted mt-1 fw-semibold fs-7">&nbsp</span>
                             </h3>
                             <div class="card-toolbar">
@@ -459,22 +520,25 @@
                         <!--begin::Body-->
                         <div class="card-body pt-0">
                             <div class="py-10 text-center">
-                                <img style="display: none;" id="gambar1" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar2" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar3" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar4" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar5" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar6" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar7" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar8" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar9" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar10" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar11" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar12" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar13" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar14" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar15" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
-                                <img style="display: none;" id="gambar16" src="{{asset('template')}}/media/svg/illustrations/easy/4.svg" class="w-200px" alt="">
+                                <img style="display: none;" id="gambar1" src="{{asset('template')}}/media/doorprize/t-1.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar2" src="{{asset('template')}}/media/doorprize/t-2.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar3" src="{{asset('template')}}/media/doorprize/t-3.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar4" src="{{asset('template')}}/media/doorprize/t-4.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar5" src="{{asset('template')}}/media/doorprize/t-5.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar6" src="{{asset('template')}}/media/doorprize/t-6.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar7" src="{{asset('template')}}/media/doorprize/t-7.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar8" src="{{asset('template')}}/media/doorprize/t-8.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar9" src="{{asset('template')}}/media/doorprize/t-9.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar10" src="{{asset('template')}}/media/doorprize/t-10.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar11" src="{{asset('template')}}/media/doorprize/t-11.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar12" src="{{asset('template')}}/media/doorprize/t-12.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar13" src="{{asset('template')}}/media/doorprize/t-13.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar14" src="{{asset('template')}}/media/doorprize/t-14.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar15" src="{{asset('template')}}/media/doorprize/t-15.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar16" src="{{asset('template')}}/media/doorprize/t-16.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar17" src="{{asset('template')}}/media/doorprize/t-17.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar18" src="{{asset('template')}}/media/doorprize/t-18.jpg" class="w-300px" alt="">
+                                <img style="display: none;" id="gambar19" src="{{asset('template')}}/media/doorprize/t-19.jpg" class="w-300px" alt="">
                             </div>
                         </div>
                         <!--end::Body-->

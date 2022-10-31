@@ -44,8 +44,6 @@
                 </a>
             </p>
         </div>
-        <div class="card-body pb-0">
-        </div>
     </div>
     <!--end::Toolbar-->
     <!--begin::Post-->

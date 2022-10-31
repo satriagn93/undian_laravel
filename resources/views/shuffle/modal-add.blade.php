@@ -1,6 +1,6 @@
 <div class="modal fade" id="edit-Items" tabindex="-1" aria-hidden="true">
     <!--begin::Modal dialog-->
-    <div class="modal-dialog modal-dialog-centered mw-900px">
+    <div class="modal-dialog modal-dialog-centered mw-600px">
         <!--begin::Modal content-->
         <div class="modal-content">
             <!--begin::Modal header-->
@@ -26,13 +26,13 @@
                             <!--begin::Info-->
                             <div class="d-flex flex-stack pb-3">
                                 <!--begin::Info-->
-                                <div class="d-flex">
-                                    <img class="mw-100 h-200px me-4 mb-5 mb-lg-0" src="{{asset('template')}}/media/illustrations/sigma-1/11.png">
+                                <div class="text-center d-flex">
+                                    <!-- <img class="mw-100 h-200px me-4 mb-5 mb-lg-0" src="{{asset('template')}}/media/illustrations/sigma-1/11.png"> -->
                                     <!--end::Avatar-->
                                     <!--begin::Details-->
                                     <div style="margin-top: 50px;" class="ms-5">
                                         <!--begin::Name-->
-                                        <div class="d-flex align-items-center">
+                                        <div style="text-align: center;" class="d-flex align-items-center">
                                             <input style="font-size: 30px;" type="text" class="form-control form-control-sm" id="name_model" name="name_model" readonly>
                                         </div>
                                         <br>

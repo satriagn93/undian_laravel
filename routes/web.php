@@ -30,5 +30,10 @@ Route::get('/shuffle', [ShuffleController::class, 'index'])->name('shuffle_index
 Route::post('/doorprize', [ShuffleController::class, 'store'])->name('doorprize.store');
 
 // modal
+Route::get('/alreadywin/{id}', [ShuffleController::class, 'alreadywin'])->name('alreadywin');
 Route::get('/participantbyid/{id}', [ShuffleController::class, 'participantbyid'])->name('participantbyid');
 Route::delete('/cancel/{id}', [ShuffleController::class, 'cancel'])->name('cancel');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

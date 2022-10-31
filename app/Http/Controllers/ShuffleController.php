@@ -10,6 +10,10 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 class ShuffleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $doorprize1 = Doorprize::where('doorprize', '1')->first();
@@ -28,6 +32,9 @@ class ShuffleController extends Controller
         $doorprize14 = Doorprize::where('doorprize', '14')->first();
         $doorprize15 = Doorprize::where('doorprize', '15')->first();
         $doorprize16 = Doorprize::where('doorprize', '16')->first();
+        $doorprize17 = Doorprize::where('doorprize', '17')->first();
+        $doorprize18 = Doorprize::where('doorprize', '18')->first();
+        $doorprize19 = Doorprize::where('doorprize', '19')->first();
 
         return view('shuffle.index', compact(
             'doorprize1',
@@ -45,7 +52,10 @@ class ShuffleController extends Controller
             'doorprize13',
             'doorprize14',
             'doorprize15',
-            'doorprize16'
+            'doorprize16',
+            'doorprize17',
+            'doorprize18',
+            'doorprize19'
         ));
     }
 
@@ -90,6 +100,15 @@ class ShuffleController extends Controller
         return response()->json([
             'error' => false,
             'detail' => $participant
+        ], 200);
+    }
+
+    public function alreadywin($id)
+    {
+        $doorprize = Doorprize::where('doorprize', $id)->first();
+        return response()->json([
+            'error' => false,
+            'detail' => $doorprize
         ], 200);
     }
 }
