@@ -847,6 +847,50 @@ License: For each use you must have a valid license purchased only from above li
                                 <!--end::Search-->
                             </div>
 
+
+
+                            <div class="d-flex align-items-center me-2 me-lg-4">
+                                <!--begin::Menu wrapper-->
+                                <div class="btn btn-icon btn-active-light-primary btn-custom w-30px h-30px w-md-40px h-md-40px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+                                    <i style="font-size: 30px;" class="bi bi-microsoft"></i>
+                                </div>
+                                <!--begin::Menu-->
+                                <div class="menu menu-sub menu-sub-dropdown menu-column w-250px w-lg-325px" data-kt-menu="true" style="">
+                                    <!--begin::Heading-->
+                                    <div class="d-flex flex-column flex-center bgi-no-repeat rounded-top px-9 py-10" style="background-image:url('{{asset('template')}}/media/misc/pattern-1.jpg')">
+                                        <span class="badge bg-primary py-2 px-3">Quik Menu</span>
+                                        <!--end::Status-->
+                                    </div>
+                                    <!--end::Heading-->
+                                    <!--begin:Nav-->
+                                    <div class="row g-0">
+                                        <!--begin:Item-->
+                                        <div class="col-6">
+                                            <a href="{{url('/participant')}}" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
+                                                <!--begin::Svg Icon | path: icons/duotune/finance/fin009.svg-->
+                                                <i style="font-size: 20px;" class="bi bi-people"></i>
+                                                <!--end::Svg Icon-->
+                                                <span class="fs-5 fw-semibold text-gray-800 mb-0">Participant</span>
+                                                <span class="fs-7 text-gray-400">List Participant</span>
+                                            </a>
+                                        </div>
+                                        <!--end:Item-->
+                                        <!--begin:Item-->
+                                        <div class="col-6">
+                                            <a href="{{url('/shuffle')}}" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-bottom">
+                                                <!--begin::Svg Icon | path: icons/duotune/communication/com010.svg-->
+                                                <i style="font-size: 20px;" class="bi bi-gift"></i>
+                                                <!--end::Svg Icon-->
+                                                <span class="fs-5 fw-semibold text-gray-800 mb-0">Doorprize</span>
+                                                <span class="fs-7 text-gray-400">Menu Doorprize</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Menu-->
+                                <!--end::Menu wrapper-->
+                            </div>
+
                             <div class="d-flex align-items-center me-2 me-lg-4">
                                 <a href="#" class="btn btn-icon btn-borderless btn-color-white btn-active-primary bg-white bg-opacity-10" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
                                     <!--begin::Svg Icon | path: icons/duotune/communication/com013.svg-->

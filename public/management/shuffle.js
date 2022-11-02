@@ -5,9 +5,9 @@ function dp1() {
         url: "/alreadywin/" + 1,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
                 $('#p1value').html("1");
-
+                $("#btn_start").show('');
+                
                 $("#gambar1").show('');
                 $("#gambar17").hide('');
                 $("#gambar18").hide('');
@@ -49,7 +49,7 @@ function dp2() {
         url: "/alreadywin/" + 2,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("2");
                 
                 $("#gambar2").show('');
@@ -92,7 +92,7 @@ function dp3() {
         url: "/alreadywin/" + 3,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("3");
                 
                 $("#gambar3").show('');
@@ -135,7 +135,7 @@ function dp4() {
         url: "/alreadywin/" + 4,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("4");
                 
                 $("#gambar4").show('');
@@ -179,7 +179,7 @@ function dp5() {
         url: "/alreadywin/" + 5,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("5");
                 
                 $("#gambar5").show('');
@@ -222,7 +222,7 @@ function dp6() {
         url: "/alreadywin/" + 6,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("6");
                 
                 $("#gambar6").show('');
@@ -265,7 +265,7 @@ function dp7() {
         url: "/alreadywin/" + 7,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("7");
                 
                 $("#gambar7").show('');
@@ -308,7 +308,7 @@ function dp8() {
         url: "/alreadywin/" + 8,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("8");
                 
                 $("#gambar8").show('');
@@ -351,7 +351,7 @@ function dp9() {
         url: "/alreadywin/" + 9,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("9");
                 
                 $("#gambar9").show('');
@@ -394,7 +394,7 @@ function dp10() {
         url: "/alreadywin/" + 10,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("10");
                 
                 $("#gambar10").show('');
@@ -437,7 +437,7 @@ function dp11() {
         url: "/alreadywin/" + 11,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("11");
                 
                 $("#gambar11").show('');
@@ -480,7 +480,7 @@ function dp12() {
         url: "/alreadywin/" + 12,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("12");
                 
                 $("#gambar12").show('');
@@ -523,7 +523,7 @@ function dp13() {
         url: "/alreadywin/" + 13,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("13");
                 
                 $("#gambar13").show('');
@@ -566,7 +566,7 @@ function dp14() {
         url: "/alreadywin/" + 14,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("14");
                 
                 $("#gambar14").show('');
@@ -609,7 +609,7 @@ function dp15() {
         url: "/alreadywin/" + 15,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("15");
                 
                 $("#gambar15").show('');
@@ -652,7 +652,7 @@ function dp16() {
         url: "/alreadywin/" + 16,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("16");
                 
                 $("#gambar16").show('');
@@ -695,7 +695,7 @@ function dp17() {
         url: "/alreadywin/" + 17,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("17");
                 
                 $("#gambar17").show('');
@@ -738,7 +738,7 @@ function dp18() {
         url: "/alreadywin/" + 18,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("18");
                 
                 $("#gambar18").show('');
@@ -781,7 +781,7 @@ function dp19() {
         url: "/alreadywin/" + 19,
         success: function(data) {
             if (data.detail == null) {
-                $("#formdiv").show('');
+                $("#btn_start").show('');
                 $('#p1value').html("19");
                 
                 $("#gambar19").show('');
@@ -828,6 +828,7 @@ function addshuffle() {
                 Swal.fire('Data Participant kosong')
             }else{
                 $("#edit-Items").modal('show');
+                $("#modalshuffle").modal('hide');
 
                 $("#form-create input[name=name_model]").val(data.detail.name);
                 $("#form-create input[name=number_model]").val(data.detail.number);
