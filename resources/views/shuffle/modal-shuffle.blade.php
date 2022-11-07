@@ -1,4 +1,4 @@
-<div style="background-color: #ffc2c2;" class="modal fade" tabindex="-1" aria-hidden="true" id="modalshuffle">
+<div style="background-color: #610000; background-image: url('{{asset('template')}}/media/auth/bg_merah_kecil.jpg'" class="modal fade" tabindex="-1" aria-hidden="true" id="modalshuffle">
     <div class="modal-dialog modal-dialog-centered mw-1000px">
         <div style="background-color: #c23030" class="modal-content shadow-none">
             <div style="height: 100px;">

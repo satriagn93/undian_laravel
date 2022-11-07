@@ -18,8 +18,8 @@
                     <input style="font-size: 75px; border: #12121b; text-align: center;" type="text" class="form-control form-control-sm" id="number_model" name="number_model" readonly>
                     <input style="font-size: 30px; width: 20px;" type="text" class="form-control form-control-sm" id="doorprize_model" name="doorprize_model" hidden>
                     <input style="font-size: 30px;" type="text" class="form-control form-control-sm" id="email_model" name="email_model" hidden>
-                    <input style="font-size: 30px;" type="text" class="form-control form-control-sm" id="company_model" name="company_model" hidden>
                     <input style="font-size: 95px; border: #12121b; text-align: center;" type="text" class="form-control form-control-sm" id="name_model" name="name_model" readonly>
+                    <input style="font-size: 60px; border: #12121b; text-align: center;" type="text" class="form-control form-control-sm" id="company_model" name="company_model" readonly>
                 </div>
 
                 <div class="modal-footer">

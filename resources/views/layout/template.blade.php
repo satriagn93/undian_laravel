@@ -46,7 +46,7 @@ License: For each use you must have a valid license purchased only from above li
 <!--begin::Body-->
 <!-- @include('sweetalert::alert') -->
 
-<body data-kt-name="metronic" id="kt_body" class="header-tablet-and-mobile-fixed aside-enabled">
+<body data-kt-name="metronic" id="kt_body" class="header-tablet-and-mobile-fixed aside-enabled" style="background-image: url('{{asset('template')}}/media/auth/bg_merah_kecil.jpg'">
     <!--begin::Theme mode setup on page load-->
     <script>
         if (document.documentElement) {
@@ -99,7 +99,7 @@ License: For each use you must have a valid license purchased only from above li
                             </a>
                             <!--end::Logo-->
                         </div>
-                        <img alt="Logo" src="{{asset('template')}}/media/logos/banner.jpg" class="h-80px d-none d-md-block" />
+                        <img alt="Logo" src="{{asset('template')}}/media/logos/banner.jpg" class="h-100px d-none d-md-block" />
                         <!--end::Brand-->
                         <!--begin::Topbar-->
                         <div class="topbar d-flex align-items-stretch">
