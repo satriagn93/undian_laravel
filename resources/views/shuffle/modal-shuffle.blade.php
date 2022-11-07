@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-dialog-centered mw-1000px">
         <div style="background-color: #c23030" class="modal-content shadow-none">
             <div style="height: 100px;">
-                <h1 style="font-size: 40px; text-align: center; vertical-align: middle; margin-top: 10px; color: white;" class="modal-title">
+                <h1 style="font-size: 70px; text-align: center; vertical-align: middle; margin-top: 10px; color: white;" class="modal-title">
                     <img style="height: 100px; border-radius: 50%;" src="{{asset('template')}}/media/logos/bulet.jpeg" alt="">
                     Get Random Participant
                     <img style="height: 100px; border-radius: 50%;" src="{{asset('template')}}/media/logos/bulet.jpeg" alt="">
