@@ -32,7 +32,7 @@ function dp1() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 1',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/be3a7b3c-e3e5-1927-33ce-dfd7f788cb1c.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/119b692e-23b3-6be5-bce6-14d325e185b1.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -76,7 +76,7 @@ function dp2() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 2',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/62ea28a0-9fa8-43a8-73e2-9dff32bf182b.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/1ad7b445-9f30-ec14-9cf9-4026aea304d0.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -119,7 +119,7 @@ function dp3() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 3',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/0a71f2e5-8857-8c32-56bd-08ac723de548.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/1751d284-3090-d42d-368a-0c93ba856c5b.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -163,7 +163,7 @@ function dp4() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 4',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/813f67cc-f6ca-b360-54f9-c7b25b46f159.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/c6a3c1d2-4548-43c2-fdf8-2350b28ace50.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -206,7 +206,7 @@ function dp5() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 5',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/0630b26d-e6e3-f078-a5bc-9b2954bce3f1.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/f7e45387-2534-8955-d258-ff9397a88a56.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -249,7 +249,7 @@ function dp6() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 6',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/fa52e9ae-db5f-f40a-ef21-226efa8c3771.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/7e8750da-6cbd-1535-b4dc-070603675efc.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -292,7 +292,7 @@ function dp7() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 7',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/068cea0a-1084-169f-e0f0-d06b9f350c85.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/7fc34e92-5bd0-e4db-45e0-977b640b55e7.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -335,7 +335,7 @@ function dp8() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 8',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/72658a1b-c741-74fb-67a3-94e6d668deab.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/c88ceeb3-aa82-0e3d-a8e3-1a3f2ea77f60.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -378,7 +378,7 @@ function dp9() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 9',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/625647de-95c3-bd1a-09c6-dadcf82fa9f8.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/b07dc5de-8b3a-21d1-02a0-550d5b55b051.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -421,7 +421,7 @@ function dp10() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 10',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/0fb582fe-69c7-70f4-a408-4e874db31fd1.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/18c524a3-cdf9-013b-6a72-ee35b5837979.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -464,7 +464,7 @@ function dp11() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 11',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/8afa5e3b-9c74-6c83-fa67-3da40117da3e.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/d4098d1d-c5b5-acbb-7e91-485c14c61fe7.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -507,7 +507,7 @@ function dp12() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 12',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/7bf3c187-4fcd-d028-ef86-439176fd7fae.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/369f5c68-2345-ae99-0b5b-11fdcbad6e44.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -550,7 +550,7 @@ function dp13() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 13',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/64b812fa-58fa-0068-726f-4d7cec51fc3d.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/3e0030ff-2243-d976-3c9e-42af26daa109.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -593,7 +593,7 @@ function dp14() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 14',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/daf1ccee-401a-23e1-254f-454474dc3e63.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/2591d0fd-acd1-f321-69e3-4b0bb7efe901.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -636,7 +636,7 @@ function dp15() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 15',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/f7bf7aed-71fa-1238-cab4-aaade825f308.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/35e82277-cc39-37ae-2f28-80c77d57861e.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -679,7 +679,7 @@ function dp16() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 16',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/0a71c5e9-4ae3-0fb8-845f-9635d0d68331.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/aea8ea9a-2fef-6dd9-29cc-d258f5eaede5.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',
@@ -808,7 +808,7 @@ function dp19() {
                 Swal.fire({
                     title: 'Pemenang sudah terpilih.',
                     text: 'Selamat kepada pemenang doorpirze 19',
-                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/292987bf-ac37-36d1-1cc3-fe6a0f7ced66.jpg',
+                    imageUrl: 'https://mcusercontent.com/67df7fb0d69931daec95fbd01/images/67ba8709-10c5-cdd9-6639-d543c5eb5a30.jpg',
                     imageWidth: 300,
                     imageHeight: 300,
                     imageAlt: 'Custom image',

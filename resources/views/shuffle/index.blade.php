@@ -395,7 +395,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a style="font-size: 30px;" href="#" onclick="dp17()"> Win doorprize 17</a>
+                                                <a style="font-size: 30px;"> Win doorprize 17</a>
                                             </span>
                                         </div>
                                     </div>
@@ -416,7 +416,7 @@
                                             <span class="badge badge-light-success fs-base">
                                                 <span class="svg-icon svg-icon-5 svg-icon-success ms-n1">
                                                 </span>
-                                                <a style="font-size: 30px;" href="#" onclick="dp18()"> Win doorprize 18</a>
+                                                <a style="font-size: 30px;"> Win doorprize 18</a>
                                             </span>
                                         </div>
                                     </div>
@@ -460,25 +460,25 @@
                         </div>
                         <div class="card-body pt-0">
                             <div class="py-10 text-center">
-                                <img style="display: none;" id="gambar1" src="{{asset('template')}}/media/doorprize/t-1.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar2" src="{{asset('template')}}/media/doorprize/t-2.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar3" src="{{asset('template')}}/media/doorprize/t-3.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar4" src="{{asset('template')}}/media/doorprize/t-4.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar5" src="{{asset('template')}}/media/doorprize/t-5.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar6" src="{{asset('template')}}/media/doorprize/t-6.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar7" src="{{asset('template')}}/media/doorprize/t-7.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar8" src="{{asset('template')}}/media/doorprize/t-8.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar9" src="{{asset('template')}}/media/doorprize/t-9.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar10" src="{{asset('template')}}/media/doorprize/t-10.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar11" src="{{asset('template')}}/media/doorprize/t-11.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar12" src="{{asset('template')}}/media/doorprize/t-12.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar13" src="{{asset('template')}}/media/doorprize/t-13.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar14" src="{{asset('template')}}/media/doorprize/t-14.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar15" src="{{asset('template')}}/media/doorprize/t-15.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar16" src="{{asset('template')}}/media/doorprize/t-16.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar17" src="{{asset('template')}}/media/doorprize/t-17.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar18" src="{{asset('template')}}/media/doorprize/t-18.jpg" class="w-350px" alt="">
-                                <img style="display: none;" id="gambar19" src="{{asset('template')}}/media/doorprize/t-19.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar1" src="{{asset('template')}}/media/doorprize/T-1.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar2" src="{{asset('template')}}/media/doorprize/T-2.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar3" src="{{asset('template')}}/media/doorprize/T-3.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar4" src="{{asset('template')}}/media/doorprize/T-4.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar5" src="{{asset('template')}}/media/doorprize/T-5.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar6" src="{{asset('template')}}/media/doorprize/T-6.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar7" src="{{asset('template')}}/media/doorprize/T-7.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar8" src="{{asset('template')}}/media/doorprize/T-8.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar9" src="{{asset('template')}}/media/doorprize/T-9.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar10" src="{{asset('template')}}/media/doorprize/T-10.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar11" src="{{asset('template')}}/media/doorprize/T-11.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar12" src="{{asset('template')}}/media/doorprize/T-12.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar13" src="{{asset('template')}}/media/doorprize/T-13.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar14" src="{{asset('template')}}/media/doorprize/T-14.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar15" src="{{asset('template')}}/media/doorprize/T-15.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar16" src="{{asset('template')}}/media/doorprize/T-16.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar17" src="{{asset('template')}}/media/doorprize/T-17.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar18" src="{{asset('template')}}/media/doorprize/T-18.jpg" class="w-350px" alt="">
+                                <img style="display: none;" id="gambar19" src="{{asset('template')}}/media/doorprize/T-19.jpg" class="w-350px" alt="">
                             </div>
                         </div>
                     </div>
